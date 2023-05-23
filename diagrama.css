@@ -1,0 +1,29 @@
+
+canvas {
+    max-height: 100%;
+}
+
+#chartReport{
+    width: 700px;
+    height: 450px;
+}
+
+.back {
+    display: block;
+    padding: 5px;
+    background-color: #d3ad7f;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 150px;
+    text-align: center;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.back:hover{
+    background-color: #111;
+    color: #d3ad7f;
+}

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!--header start-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+
+        <section>
+            <dialog>
+                <h2>Хочеш отримувати рекламу від нашого сайту????</h2>
+                <p>
+                    <a class="btn" id="closeDialog">Ні, нажаль(</a>
+                    <a class="btn" id="closeeDialog">Так, звісно!</a>
+                </p>
+            </dialog>
+        </section>
+
+        <div id="bg_popup">
+            <div id="popup">
+                <h1>Кава для Вас</h1>
+                <p>Замовляй каву тільки у нашому магазині, тому що вона найсмачніша! </p>
+                <img src="img/about-img.jpeg" alt="">
+                <a class="close" id="close" href="#" title="Закрити"
+                    onclick="document.getElementById('bg_popup').style.display='none';">X</a>
+            </div>
+        </div>
+
+        <a class="back_to_top" title="Наверх">↑</a>
+
+        <nav class="navbar">
+            <a href="#home">Головна</a>
+            <a href="#about">Про Нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#products">Продукти</a>
+            <a href="#review">Відгуки</a>
+            <a href="#contact">Наші Контакти</a>
+            <a href="news.html">Цікаве</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html" class="fas fa-shopping-cart cart"></a>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Шукати тут...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+    <!--header end-->
+
+
+
+    <!-- Home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>свіжа кава вранці </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iure veritatis sed amet sequi praesentium </p>
+            <a href="cart.html" class="btn">замов свою сьогодні</a>
+        </div>
+    </section>
+    <!-- Home section end-->
+
+
+
+  
+
+    <!--about section starts-->
+    <section class="about" id="about">
+        <h1 class="heading"><span>Про </span>Нас</h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/about-img.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3> Що робить нашу каву особливою? </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quod cupiditate! Totam atque
+                    dolores voluptatem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptate ipsa ad modi repudiandae
+                    praesentium aspernatur magni aliquid ab recusandae!</p>
+                <a href="#" class="btn open-popup">Читати більше</a>
+
+            </div>
+        </div>
+    </section>
+    <!--about section end-->
+
+    <!--menu section starts-->
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Наше <span> Меню </span></h1>
+
+        <div class="box-container">
+            <div class="box" data-name="p-1">
+                <img src="img/menu1.png" alt="">
+                <h3>капучино</h3>
+                <div class="price"> 30₴ <span>35 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-2">
+                <img src="img/menu2.png" alt="">
+                <h3>американо</h3>
+                <div class="price"> 20 ₴ <span> 25 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-3">
+                <img src="img/menu3.png" alt="">
+                <h3>еспресо</h3>
+                <div class="price"> 15 ₴ <span>20 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-4">
+                <img src="img/menu4.png" alt="">
+                <h3>гарячий шоколад</h3>
+                <div class="price">30 ₴ <span> 40 ₴ </span></div>
+            </div>
+
+            <div class="box" data-name="p-5">
+                <img src="img/menu5.png" alt="">
+                <h3>латте</h3>
+                <div class="price"> 40 ₴ <span>45 ₴</span></div>
+            </div>
+
+            <div class="box" data-name="p-6">
+                <img src="img/menu6.png" alt="">
+                <h3>глясе</h3>
+                <div class="price"> 55 ₴ <span> 60 ₴</span></div>
+            </div>
+        </div>
+
+
+        <div class="products-preview">
+
+            <div class="preview active" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="img/menu1.png" alt="">
+                <h3>капучино</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price">30 ₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="img/menu2.png" alt="">
+                <h3>американо</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price">20₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="img/menu3.png" alt="">
+                <h3>еспресо</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price">15₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="img/menu4.png" alt="">
+                <h3>гарячий шоколад</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price"> 30 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="img/menu5.png" alt="">
+                <h3>латте</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price"> 40 ₴</div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart"> в корзину</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="img/menu6.png" alt="">
+                <h3>глясе</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, laboriosam!</p>
+                <div class="price"> 55 ₴ </div>
+                <div class="buttons">
+                    <a href="#" class="buy">купити </a>
+                    <a href="cart.html" class="cart-btn"> в корзину</a>
+                </div>
+            </div>
+
+    </section>
+    <!--menu section ends-->
+
+    <!--products section start-->
+    <section class="products" id="products">
+
+        <h1 class="heading">наші <span>продукти</span></h1>
+
+        <div class="box-container1">
+            <div class="box1">
+                <div class="icons">
+                    <a href="cart.html" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/product1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кава з нікарагуа</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">600 ₴ <span>720 ₴</span></div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="icons">
+                    <a href="cart.html" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/product2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кава з колумбії</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 800 ₴ <span> 950 ₴</span></div>
+                </div>
+            </div>
+
+            <div class="box1">
+                <div class="icons">
+                    <a href="cart.html" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <div class="image">
+                    <img src="img/product3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кава з перу</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 950 ₴ <span> 1020 ₴</span></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--products section end-->
+
+
+
+
+    <!--review section start-->
+    <section class="review" id="review">
+        <h1 class="heading">клієнтські <span>Відгуки</span></h1>
+
+        <div class="box-container3">
+            <div class="box3">
+                <img src="img/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi
+                    deleniti sequi quidem perspiciatis omnis magnam ipsa doloremque quaerat maxime?</p>
+                <img src="img/pic-1.png" alt="" class="user">
+                <h3>олександр</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box3">
+                <img src="img/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi
+                    deleniti sequi quidem perspiciatis omnis magnam ipsa doloremque quaerat maxime?</p>
+                <img src="img/pic-2.png" alt="" class="user">
+                <h3>марічка</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box3">
+                <img src="img/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est excepturi
+                    deleniti sequi quidem perspiciatis omnis magnam ipsa doloremque quaerat maxime?</p>
+                <img src="img/pic-3.png" alt="" class="user">
+                <h3>олег</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--review section end-->
+
+    <!--section contact start-->
+    <section class="contact" id="contact">
+        <h1 class="heading"> наші <span> контакти </span> </h1>
+
+        <div class="row">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13380.877631128498!2d25.93678898584303!3d48.2816460991475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473408bbfef71b7f%3A0x404bcc8a2e4eb5c0!2z0J_QsNGA0Log0ZbQvNC10L3RliDQqNC10LLRh9C10L3QutCw!5e0!3m2!1suk!2sua!4v1682926206883!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <form action="">
+                <h3>Зв'яжітся з нами</h3>
+                <div class="inputBox">
+                    <span class=" fa fa-user"></span>
+                    <input type="text" placeholder="ім'я">
+                </div>
+                <div class="inputBox">
+                    <span class=" fa fa-envelope"></span>
+                    <input type="email" placeholder="пошта">
+                </div>
+                <div class="inputBox">
+                    <span class=" fa fa-phone"></span>
+                    <input type="number" placeholder="телефон">
+                </div>
+                <input type="submit" value="надіслати" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+    <!--section contact end-->
+
+    <!--section blogs start-->
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> наші <span> цікавинки </span></h1>
+
+        <div class="box-container2">
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Яка кава найсмачніша?</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, vel!</p>
+                    <a href="news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">як правильно готувати каву?</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, vel!</p>
+                    <a href="news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="image">
+                    <img src="img/blog-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">з чим кава смакує найкраще?</a>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, vel!</p>
+                    <a href="news.html" class="btn">Читати більше</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--section blogs end-->
+
+    <!--section footer start-->
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Головна</a>
+            <a href="#about">Про Нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#products">продукти</a>
+            <a href="#review">Відгуки</a>
+            <a href="#contact"> наші Контакти</a>
+            <a href="news.html">Цікаве</a>
+        </div>
+
+
+        <div class="credit">Created by <span>Allex</span> | all rights reserved</div>
+
+    </section>
+    <!--section footer end-->
+
+
+    <section class="coffee-section">
+        <div class="coffee" id="coffee">
+            <div class="btn center">
+                <a onclick="emp('number.option')">завантажити</a>
+                <select id="number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </selectt>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--custom js file link-->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

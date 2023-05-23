@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="overlay">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">ГОЛОВНА</a>
+                        
+                    </li>
+                    <li class="cart">
+                        <a href="shop.html">
+                            <ion-icon name="basket"></ion-icon>КОРЗИНА<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <select class="price-sorting type-regular" name="price-sorting">
+        <option value="h1" >Звичайно</option>
+        <option value="l2h">Від меншої до більшої</option>
+        <option value="h2l">Від більшої до меншої</option>
+    </select>
+
+    <div class="container" id="container">
+    </div>
+
+ 
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+
+</body>
+
+</html>

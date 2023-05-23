@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/diagrama.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="chartReport">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <select onchange="selectChanged(this.value);">
+    
+        <option value="1">Кругова</option>
+
+        <option value="2">Стовпчаста</option>
+
+        <option value="3">Графік</option>
+
+    </select>
+
+    <a href="shop.html" class="back">До Корзини</a>
+
+	<script src="js/data.js"></script>
+	<script src="js/diagrama.js"></script>
+	
+    
+</body>
+
+</html>
